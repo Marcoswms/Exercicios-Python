@@ -23,7 +23,7 @@ for index in range(LIMITE_FINAL_PECAS_PRODUZIDAS):
 
     while numeroDaPeca < LIMITE_INICIAL_PECAS_PRODUZIDAS or numeroDaPeca > LIMITE_FINAL_PECAS_PRODUZIDAS:
         numeroDaPeca = int(input("\nIncorreto!!"
-                                 f"\nDigite a novamente a numeração da {index +1}ª Peça a ser cadastrada: "))
+                                 f"\nDigite novamente a numeração da {index +1}ª Peça a ser cadastrada: "))
     validacaoPeca = int(input("\nEstado da Peça:\n"
                               "\n* Peças Aprovadas - Digite 1"
                               "\n* Peças Reprovadas - Digite 2:\n"
@@ -40,7 +40,7 @@ for index in range(LIMITE_FINAL_PECAS_PRODUZIDAS):
         contadorReprovado += 1
 
 total = contadorAprovado + contadorReprovado
-print(f"\nTotal de Peças Aprovadas: {contadorAprovado}"
-      f"\nTotal de Peças Reprovadas: {contadorReprovado}"
-      f"\nTotal de Peças cadastradas: {total}"
-      f"\nNúmero das peças Reprovadas: {listaPecaReprovada}")
+print(f"\nTotal de peças aprovadas: {contadorAprovado}"
+      f"\nTotal de peças reprovadas: {contadorReprovado}"
+      f"\nTotal de peças cadastradas: {total}"
+      f"\nNúmero de peças reprovadas: {listaPecaReprovada}")
